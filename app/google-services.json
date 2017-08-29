@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "144077805584",
+    "firebase_url": "https://face-alarm.firebaseio.com",
+    "project_id": "face-alarm",
+    "storage_bucket": "face-alarm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:144077805584:android:056ccd9b2e62f6d9",
+        "android_client_info": {
+          "package_name": "com.xangnun.facealarm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "144077805584-104hvfpps4vjgfps7q8ntll34fqa4qpp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA751o4CcYIWITz0qlWFYaK1gUzZ08dhKA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

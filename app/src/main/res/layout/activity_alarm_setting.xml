@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#303030">
+    <!-- Here you put the rest of your current view-->
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:background="#aaaaaa">
+
+        <Button
+            android:text="CANCEL"
+            android:layout_width="110dp"
+            android:layout_height="45dp"
+            android:background="@drawable/general_grey"
+            android:id="@+id/cancelButton"
+            android:layout_below="@+id/timePicker"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="18dp" />
+
+        <Button
+            android:text="Set Alarm"
+            android:layout_width="110dp"
+            android:layout_height="45dp"
+            android:background="@drawable/general_grey"
+            android:layout_marginStart="18dp"
+            android:id="@+id/set_on"
+            android:layout_below="@+id/timePicker"
+            android:layout_alignParentStart="true" />
+
+        <TimePicker
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/timePicker"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"/>
+
+        <Button
+            android:text="Set Music"
+            android:layout_width="110dp"
+            android:layout_height="45dp"
+            android:background="@drawable/general_grey"
+            android:id="@+id/set_mus"
+            android:layout_below="@+id/set_on"
+            android:layout_alignStart="@+id/set_on"
+            android:layout_alignEnd="@+id/set_on" />
+
+        <Button
+            android:text="DELETE"
+            android:layout_width="110dp"
+            android:layout_height="45dp"
+            android:background="@drawable/general_grey"
+            android:layout_below="@+id/cancelButton"
+            android:layout_alignStart="@+id/cancelButton"
+            android:id="@+id/deleteButton" />
+
+    </RelativeLayout>
+</ScrollView>

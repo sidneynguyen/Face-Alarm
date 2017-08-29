@@ -1,0 +1,14 @@
+*.iml
+.gradle
+/local.properties
+.idea/
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+
+#test files
+#app/src/androidTest/
+
+# Vim swap files
+*.swp

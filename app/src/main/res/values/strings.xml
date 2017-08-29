@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Face Alarm</string>
+    <string name="facebook_application_id" translatable="false">318074338577782</string>
+    <string name="subscription_key">b1921cb87b6c44e89da08b890646b436</string>
+    <string name="title_activity_face">FaceActivity</string>
+    <string name="facebook_app_id">318074338577782</string>
+</resources>

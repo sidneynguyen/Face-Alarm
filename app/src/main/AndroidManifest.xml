@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xangnun.facealarm">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera2.full" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
+
+    <application
+        android:name=".FaceAlarm"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.xangnun.facealarm.MAINACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".AlarmSettingActivity">
+
+            <!-- Enables Alarm Setting Activity -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AlarmSettingActivity" />
+        </activity>
+        <activity android:name=".WakeUpActivity">
+
+            <!-- Enables Alarm Setting Activity -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WakeUpActivity" />
+        </activity>
+        <activity android:name=".AlarmControl">
+
+            <!-- Enables Alarm Setting Activity -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AlarmControl" />
+        </activity>
+
+        <receiver android:name=".Alarm_Receiver" />
+
+        <activity android:name=".LeadershipBoardActivity">
+
+            <!-- Enables Leaderboard Activity -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LeadershipBoardActivity" />
+        </activity>
+
+        <service android:name=".RingTonePlayingService" />
+
+        <receiver android:name=".Alarm_Receiver" />
+
+        <activity
+            android:name=".FaceActivity"
+            android:screenOrientation="sensorPortrait"
+            android:showOnLockScreen="true"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>
